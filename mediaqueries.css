@@ -82,9 +82,7 @@
   }
 
   #role {
-    white-space: wrap !important; /* Allows wrapping */
-    word-wrap: break-word !important;
-    /*font-size: 1.9rem !important;  Adjust the value as needed */
+    font-size: 1.9rem !important; /* Adjust the value as needed */
   }
 
   #projects, #experience, #academics{
@@ -99,6 +97,10 @@
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
+  }
+
+  .description{
+    font-size: 1rem!important;
   }
   .about-containers,
   .contact-info-upper-container,

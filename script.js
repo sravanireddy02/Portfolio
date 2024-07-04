@@ -5,9 +5,11 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+
 document.addEventListener("DOMContentLoaded", function() {
-  const roles = ["Full Stack Developer!!!","Data Engineer!!!", "Software Engineer!!!", "Web Developer!!!" ];
+  const roles = ["Full Stack Developer", "Data Engineer", "Software Engineer", "Web Developer"];
   const roleElement = document.getElementById("role");
+  const cursorElement = document.getElementById("cursor");
 
   let currentIndex = 0;
   let currentCharIndex = 0;
@@ -17,35 +19,34 @@ document.addEventListener("DOMContentLoaded", function() {
   const pauseBetweenWords = 2000;
 
   function typeRole() {
-      const currentRole = roles[currentIndex];
-      const displayedText = currentRole.substring(0, currentCharIndex);
-      roleElement.textContent = displayedText;
-      
-      console.log(`Current Role: ${currentRole}`);
-      console.log(`Displayed Text: ${displayedText}`);
-      console.log(`isDeleting: ${isDeleting}`);
-      console.log(`currentCharIndex: ${currentCharIndex}`);
+    const currentRole = roles[currentIndex];
+    const displayedText = currentRole.substring(0, currentCharIndex);
+    roleElement.textContent = displayedText;
+    
+    // Toggle cursor visibility
+    cursorElement.style.visibility = currentCharIndex < currentRole.length ? "visible" : "hidden";
 
-      if (!isDeleting && currentCharIndex < currentRole.length) {
-          currentCharIndex++;
-          setTimeout(typeRole, typingSpeed);
-      } else if (isDeleting && currentCharIndex > 0) {
-          currentCharIndex--;
-          setTimeout(typeRole, deletingSpeed);
-      } else if (!isDeleting && currentCharIndex === currentRole.length) {
-          setTimeout(() => {
-              isDeleting = true;
-              typeRole();
-          }, pauseBetweenWords);
-      } else if (isDeleting && currentCharIndex === 0) {
-          isDeleting = false;
-          currentIndex = (currentIndex + 1) % roles.length;
-          setTimeout(typeRole, typingSpeed);
-      }
+    if (!isDeleting && currentCharIndex < currentRole.length) {
+      currentCharIndex++;
+      setTimeout(typeRole, typingSpeed);
+    } else if (isDeleting && currentCharIndex > 0) {
+      currentCharIndex--;
+      setTimeout(typeRole, deletingSpeed);
+    } else if (!isDeleting && currentCharIndex === currentRole.length) {
+      setTimeout(() => {
+        isDeleting = true;
+        typeRole();
+      }, pauseBetweenWords);
+    } else if (isDeleting && currentCharIndex === 0) {
+      isDeleting = false;
+      currentIndex = (currentIndex + 1) % roles.length;
+      setTimeout(typeRole, typingSpeed);
+    }
   }
 
   typeRole();
 });
+
 
 document.addEventListener('DOMContentLoaded', function() {
   // Function to handle tab switching for a specific section

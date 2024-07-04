@@ -200,6 +200,24 @@ section {
   
 }
 
+#cursor {
+  font-family: monospace;
+  font-weight: 10;
+  font-size: 2rem;
+  color: #000000;
+  padding-left: none;
+  animation: blink-animation 0.75s step-end infinite; /* Blinking animation */
+}
+
+@keyframes blink-animation {
+  0%, 100% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0; /* Fully hidden */
+  }
+}
+
 .p2{
   display: flex;
 }
