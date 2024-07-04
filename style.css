@@ -275,7 +275,7 @@ section {
 }
 
 #description {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   white-space: nowrap; /* Prevents from next line */
   margin-bottom: 20px; /* Adds space */
@@ -285,7 +285,7 @@ section {
 }
 
 #role {
-  font-size: 2rem !important; /* Adjust the value as needed */
+  font-size: 1.5rem !important; /* Adjust the value as needed */
   color: rgb(85, 24, 227) !important;
 }
 
