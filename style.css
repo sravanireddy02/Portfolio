@@ -193,7 +193,7 @@ section {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
-  gap: 5rem;
+
   height: 80vh;
   margin-top: 20px;
   padding-top: 20vh;
