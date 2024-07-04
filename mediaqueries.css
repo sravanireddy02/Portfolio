@@ -81,6 +81,9 @@
     margin-bottom: 0;
   }
 
+  #experience{
+    margin-top: 0;
+  }
 
   #projects, #experience, #academics{
     padding-top: 7rem;
@@ -103,6 +106,7 @@
   .btn{
     margin-bottom: 0;
   }
+
   .description{
     font-size: 1rem!important;
   }
