@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    
+    <nav id="desktop-nav">
+      <!--<div class="logo"></div> -->
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sarugunta1/'"
+          /></li>
+          <li>
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/sravanireddy02'"
+          /></li>
+        <li>
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='mailto:sravsreddy098@gmail.com'">
+          Let's Connect 🔗
+        </button>
+      </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sravani Reddy</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <img src="./assets/icon.png" alt="Hamburger Menu Icon" class="menu-icon">
+        </div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About me</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#academics" onclick="toggleMenu()">Academics</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact me</a></li>
+          <li style="display: flex; align-items: center; gap: 15px; padding-left: 39px; margin-bottom: 10px;">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/sarugunta1/'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/sravanireddy02'"
+            />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Sravani's profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Sravani Arugunta</h1>
+          <div id="description">I'm a, <span id="role"></span></div>
+          <script src="script.js"></script>
+            <div class="goofy">
+              <div class="goofy-item">🎓 Hey there! I'm a Computer Science student passionate about building software products.</div>
+              <div class="goofy-item">🧚I may not be a whiz in the kitchen, but I sure know how to enjoy a good meal!</div>
+              <div class="goofy-item">⏰ In my downtime, you'll find me painting masterpieces while binge-watching Netflix series.</div>
+              <div class="goofy-item">✨Let's just say I'm a foodie artist who codes!</div>
+              <div class="goofy-item;">📍 Atlanta, Georgia</div>
+            <div class="btn-container">
+              <button class="btn btn-color-2" onclick="console.log('Button clicked'); window.open('./assets/Sravani_Arugunta.pdf')">Download CV</button>
+            </div>
+          </div>
+        </section>
+    
+    <section id="about">
+      <!-- <p class="section__text__p1">🚀 Unleashing Innovation</p> -->
+      <h1 class="stitle">✨ Unleashing Innovation</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="text-container">
+<p align=" left">💫 Hello! I'm Sravani Arugunta, a tech visionary with a Master's degree in Computer Science from Georgia State University (GPA: 3.60).</p><br>
+<p align= "left">🎯 My mission? Ignite innovation, inspire breakthroughs, and engineer transformative solutions. </p> <br> 
+<p align="left">💻 Currently, I'm working as a Software Application Developer at Georgia State University, where I collaborate on developing the Online Graduate Management System (OGMS) portal. Previously, I worked as a Data Engineer at Autosavvy in Hyderabad, where I developed scalable ETL pipelines and enhanced machine learning model accuracy by 20%.</p> <br><br>
+<p align="center">🚀 Ready to Innovate? Let’s Connect!</p> <br>
+<p align="left"> I thrive on contributing to projects that leave a lasting impact. If you're looking for a relentless problem solver with a knack for solving complex problems, let’s connect and craft something truly groundbreaking!</p> <br>
+          </div>
+        </div>
+      </div>
+  
+      <section id="experience">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-container">
+          <div class="experience-box">
+            <div class="tab-container">
+              <div class="tab active" data-tab="software-developer">Software Application Developer</div>
+              <div class="tab" data-tab="data-engineer">Data Engineer</div>
+            </div>
+            <div id="software-developer" class="tab-content active">
+              <div class="experience-header">
+                <div class="header-left">
+                  <h3 class="job-title">Software Application Developer</h3>
+                  <div class="header-sub">
+                  <p class="company-name">Georgia State University</p>
+                </div>
+                </div>
+                <div class="header-right">
+                  <p class="experience-dates">Aug 2023 – Present</p>
+                  <p class="location">Atlanta, Georgia</p>
+                </div>
+              </div>
+              <ul class="responsibilities">
+                <li>Collaborated with software engineers to develop and maintain the innovative Online Graduate Management System (OGMS) portal.</li>
+                <li>Actively participated in all stages of the software development life cycle, from design to final deployment.</li>
+                <li>Utilized Python and SQL to analyze data, driving insightful research outcomes and informed decision making.</li>
+                <li>Identified and resolved system bugs, optimizing the OGMS Portal for peak performance and reliability.</li>
+                <li>Created and maintained documentation ensuring clear guidelines and seamless project continuity.</li>
+              </ul>
+            </div>
+            <div id="data-engineer" class="tab-content">
+              <div class="experience-header">
+                <div class="header-left">
+                  <h3 class="job-title">Data Engineer</h3>
+                  <div class="header-sub">
+                  <p class="company-name">Autosavvy</p>
+                </div>
+                </div>
+                <div class="header-right">
+                  <p class="experience-dates">Jan 2023 – May 2023</p>
+                  <p class="location">Hyderabad, India</p>
+                </div>
+              </div>
+              <ul class="responsibilities">
+                <li>Developed and deployed scalable ETL pipelines using Snowflake for data warehousing and Databricks for machine learning model implementation.</li>
+                <li>Ensured robust data solutions with Kubernetes and automated workflows with Apache Airflow.</li>
+                <li>Designed interactive visualizations with Tableau for stakeholders.</li>
+                <li>Achieved a 20% improvement in prediction accuracy with advanced machine learning models.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <section id="academics">
+          <p class="section__text__p1"></p>
+          <h1 class="title">Academics</h1>
+          <div class="academics-container">
+            <div class="academics-box">
+              <div class="tab-container">
+                <div class="tab active" data-tab="masters">Master's Degree</div>
+                <div class="tab" data-tab="bachelors">Bachelor's Degree</div>
+              </div>
+              <div id="masters" class="tab-content">
+                <div class="academics-header">
+                  <div class="header-left">
+                    <h3 class="degree-title">Master of Science in Computer Science</h3>
+                    <div class="header-sub">
+                      <p class="university-name">Georgia State University</p>
+                    </div>
+                  </div>
+                  <div class="header-right">
+                    <p class="academics-dates">Aug 2023 – Present</p>
+                    <p class="location">Atlanta, Georgia</p>
+                  </div>
+                </div>
+                <p class="p2">GPA: 3.6</p>
+                <ul class="resp">
+                  <li>Database Systems</li>
+                  <li>Advacne Human Computer Interaction</li>
+                  <li> Natural Language Processing</li>
+                  <li> Data Mining</li>
+                  <li> Web Programming </li>
+                </ul>
+              </div>
+              <div id="bachelors" class="tab-content active">
+                <div class="academics-header">
+                  <div class="header-left">
+                    <h3 class="degree-title">Bachelor of Science in Computer Science</h3>
+                    <div class="header-sub">
+                      <p class="university-name">Jawaharlal Nehru Technological University</p>
+                    </div>
+                  </div>
+                  <div class="header-right">
+                    <p class="academics-dates">Aug 2019 – May 2023</p>
+                    <p class="location">Hyderabad, India</p>
+                  </div>
+                </div>
+                <p class="p1">GPA: 3.52</p>
+                <ul class="nav-bullet-points">
+                  <li>Data Structues</li>
+                  <li>Object Oriented Design</li>
+                  <li> Design and Analysis of Algorithms</li>
+                  <li> Machine learning</li>
+                  <li> Artificial Intelligence</li>
+                  <li> Web Programming </li>
+                  <li> Database design</li>
+                  <li> Cloud Computing</li>
+                  <li> Operating Systems</li>
+                  <li> Computer Networks</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      
+        <section id="projects">
+          <h1 class="title">Projects</h1>
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/project-1.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/project-2.png"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/project-3.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+            <!---  <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/project-3.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Four</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+                </div> -->
+            </div>
+          </div>
+        </section>
+        
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:sravsreddy098@gmail.com">sravsreddy098@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin/in/sarugunta1">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&#169; Made by Sravani Reddy</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
