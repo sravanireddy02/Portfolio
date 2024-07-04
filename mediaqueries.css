@@ -99,6 +99,10 @@
   .goofy{
     padding-right: 10vh;
   }
+
+  .btn{
+    margin-bottom: auto;
+  }
   .description{
     font-size: 1rem!important;
   }
