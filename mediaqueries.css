@@ -77,12 +77,11 @@
     height: 40vh;
   }
   #home {
-    
     margin: 10px;
   }
 
   #projects, #experience, #academics{
-    padding-top: 5rem;
+    padding-top: 7rem;
     margin: 10px;
   }
 
