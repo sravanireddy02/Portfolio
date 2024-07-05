@@ -71,22 +71,18 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   #contact,
   footer {
     height: 40vh;
   }
   #home {
-    height: 70vh;
-    margin: 10px;
-  }
-
-  #experience{
+    
     margin: 10px;
   }
 
   #projects, #experience, #academics{
-    padding-top: 7rem;
+    padding-top: 5rem;
     margin: 10px;
   }
 
