@@ -190,10 +190,9 @@ section {
 /* PROFILE SECTION */
 
 #home {
-  display: flex;
+  display:flex;
   flex-direction: row-reverse;
   justify-content: center;
-
   height: 80vh;
   margin-top: 20px;
   padding-top: 20vh;
@@ -227,30 +226,30 @@ section {
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  margin-left: -10px;
+  margin-right: 5rem;
   padding-block:1.3rem;
   
 }
 
 .section__text {
   align-self: center;
-  text-align: center;
+  text-align: left;
 }
 
 .goofy{
-    
-    align-items: left;
     list-style-type: none;
-    padding: 0;
+    padding-left: -50px;
     font-size: 16px;
 }
 .goofy-item {
   text-align: left;
-  padding-left: 20px;
+  padding-left: -50px;
+  margin-right: 55px;
 }
 
 .goofy-item:nth-child(5) {
   text-align: center; /* Center text content for the fourth `.goofy-item` */
+
 }
 
 .section__text p {
@@ -270,7 +269,7 @@ section {
 
 .title {
   font-size: 2.5rem;
-  text-align: center;
+  text-align: left;
   margin-top: 13vh;
 }
 
