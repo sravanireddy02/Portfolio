@@ -246,7 +246,7 @@ section {
 }
 .goofy-item {
   text-align: left;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 .goofy-item:nth-child(5) {
