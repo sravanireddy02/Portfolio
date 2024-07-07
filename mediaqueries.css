@@ -81,8 +81,8 @@
   }
 
   #projects, #experience, #academics{
-    padding-top: 7rem;
-    margin: 10px;
+    padding-top: 11rem;
+    margin-top: 5vh;
   }
 
   article {
