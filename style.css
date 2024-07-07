@@ -247,7 +247,7 @@ section {
   margin-right: 55px;
 }
 
-.goofy-item:nth-child(5) {
+.goofy-item:nth-child(3) {
   text-align: center; /* Center text content for the fourth `.goofy-item` */
 
 }
