@@ -15,8 +15,8 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling */ overflow-x: hidden; /* Prevent horizontal scrolling */
   padding: 0px;
   width: 100%;
-  /*background-image: url('./assets/background.jpeg');
-  background-color: rgb(204, 187, 190);*/
+  /*background-image: url('./assets/background.jpeg');*/
+  background-color:white;
 }
 
 html {
@@ -42,7 +42,7 @@ nav,
 }
 
 nav {
-  background-color: rgb(204, 187, 190);
+  background-color: #ccbbbe;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -177,7 +177,7 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  margin: 0 10rem;
+  margin: 0 ;
   box-sizing: border-box;
   min-height: fit-content;
   margin-bottom: 10vh; /* Add margin to create space between sections */
@@ -194,8 +194,10 @@ section {
   flex-direction: row-reverse;
   justify-content: center;
   height: 80vh;
-  margin-top: 20px;
+  margin-left: 10rem;
+  margin-right: 10rem;
   padding-top: 20vh;
+  margin-top : 0;
   
 }
 
@@ -223,12 +225,33 @@ section {
 
 .section__pic-container {
   display: flex;
-  height: 150px;
-  width: 150px;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
   margin-right: 5rem;
   padding-block:1.3rem;
+  overflow: hidden;
   
+}
+
+
+.section__pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 110%; /* Ensure the container takes full width */
+  border-radius: 50%; /* Ensure the image is round */
+  overflow: hidden; /* Hide overflow to maintain round shape */
+  margin-right: 5rem;
+  margin-top: 10rem;
+  padding-block: 1.3rem;
+}
+
+.section__pic-container img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Ensure the image itself is round */
 }
 
 .section__text {
@@ -274,23 +297,24 @@ section {
 }
 
 .ntitle {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   text-align: left;
-  margin-top: 13vh;
+  margin-top: 10vh;
+  margin-bottom: -10px;
 }
 
 #description {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   white-space: nowrap; /* Prevents from next line */
-  margin-bottom: 20px; /* Adds space */
+  margin-top: 7px; /* Adds space */
   color: black;
   min-width: 200px; /* Adjust the width as needed to prevent shifting */
   display: inline-block; /* Ensure it respects width */
 }
 
 #role {
-  font-size: 1.5rem !important; /* Adjust the value as needed */
+  font-size: 2rem !important; /* Adjust the value as needed */
   color: rgb(85, 24, 227) !important;
 }
 
@@ -302,7 +326,6 @@ section {
 }
 
 /* BUTTONS */
-
 
 .btn-container {
   justify-content: center;
@@ -317,42 +340,31 @@ section {
   border-radius: 2rem;
 }
 
-.btn-color-1,
-.btn-color-2 {
+.btn-color-1{
   border: rgb(53, 53, 53) 0.1rem solid;
+  background-color:black ;
+  color: white;
 }
-
-.btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-  background: none;
-  color: rgb(15, 14, 14);
-}
-
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: #007bff;
   color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: white;
 }
 
 .btn-color-2 {
+  border: white 0.1rem solid;
+  background-color: #007bff;
+  color: white;
   margin-top: 10px;
   padding: 15px 30px;
   font-size: 16px;
-  background: none;
-  color: rgb(18, 17, 17);
 }
 
 .btn-color-2:hover {
-  background: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-}
-
-.btn-container {
-  gap: 1rem;
+  background:#0056b3;
+  color:white;
+  cursor: pointer;
 }
 
 /* ABOUT SECTION */
@@ -707,66 +719,84 @@ section {
 }
 
 
-
-
 /* PROJECTS SECTION */
 
 #projects {
   /* Increased top margin to ensure space between sections */
  padding-top: 21px;
  margin-top: -10vh;
+ margin-left: -20vh;
  font-size: 1rem;
 }
 
-
-.experience-details-container {
- display: flex;
- flex-wrap: wrap; /* Allow wrapping if there are too many projects to fit in one row */
- gap: 20px; /* Add space between the project items */
- justify-content: center; /* Center the project items */
- padding: 20px;
+h1 {
+  color: #000000;
+  margin: 20px 0;
 }
 
-.about-containers {
- display: flex;
- flex-wrap: wrap; /* Allow wrapping inside this container as well */
- justify-content: center; /* Center items inside this container */
- gap: 20px; /* Add space between items inside this container */
- white-space: wrap;
+.project {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 10px;
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: 0;
+   /* Add horizontal scrolling for small screens */
 }
 
-.details-container.color-container {
- flex: 1 1 calc(33.333% - 40px); /* Flex item takes up roughly one third of the container width, accounting for the gap */
- box-sizing: border-box; /* Include padding and border in the element's total width and height */
- border: 1px solid rgb(163, 163, 163);
- background: rgb(250, 250, 250);
- padding: 20px; /* Add padding for better spacing */
- border-radius: 10px;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
- font-size: 11.5px;
+.project-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 270px;
+  height: 400px;
+  padding: 10px;
+  text-align: left;
+  flex: 0 0 auto; /* Prevent flex items from shrinking */ 
 }
 
-.project-img {
- border-radius: 2rem;
- width: 100%; /* Make image take the full width of its container */
- height: auto; /* Maintain aspect ratio */
+.project :hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.project-title {
- margin: 1rem 0;
- color: black;
- font-size: 1rem; /* Decrease the font size of the project titles */
- white-space: nowrap;
+.project-card img {
+  width: 100%;
+  height: 40%;
+  border-radius: 8px 8px 0 0;
 }
 
-.project-btn {
- color: black;
- border-color: rgb(163, 163, 163);
- padding: 10px 20px; /* Adjust padding for buttons */
- font-size: 0.8rem; /* Decrease the font size of the buttons */
- display: block;
- margin: 1px auto 0 auto; /* Center the button within its container */
+.project-card h2 {
+  font-size: 1.3em;
+  margin: 15px 0 10px;
+  text-align: center;
 }
+
+.project-card p {
+  font-size: 13px;
+  color: #555;
+}
+
+.view-project-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.view-project-btn:hover {
+  background-color: #0056b3;
+}
+
+
 
 
 /* CONTACT */
